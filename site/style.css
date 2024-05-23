@@ -1,0 +1,140 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 전체설정 */
+
+* {margin: 0;
+    padding: 0;}
+ul,li {list-style: none;}
+a {text-decoration: none;
+color: black;}
+img {vertical-align: bottom;}
+
+
+
+
+/* 헤더설정 */
+.boxA {padding: 10px;
+   
+}
+.boxA .logo {font-size: 30px;
+}
+.logo a {}
+
+/* 네비설정 */
+
+.boxA-2 {display: flex; 
+        justify-content: flex-start;
+        align-items: center;}
+
+.nav {}
+
+.nav ul {display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        }
+.nav li {}
+.nav li a {display: block;
+            padding: 5px;
+        font-size: 14px;}
+
+
+/* 메인이미지설정 */
+
+.box1 {}
+.box1 img {max-width: 100%;
+            }
+
+
+/* 공지사항 */
+
+.box2 {}
+.box2 h2 {
+           margin-bottom: 5px; 
+        color: #999;
+    font-size: 18px;}
+.box2 li {
+margin-bottom: 5px;}
+.box2 a {display: block;
+        padding: 14px;
+        border-bottom: 1px dotted #ddd;
+        
+    
+    }
+    .box2 a:after {content: 0;
+                display: block;
+                clear: both;}
+    .box2 time {float: left;}
+    .box2 .txt {float: left;}
+
+
+/* 푸터설정 */
+
+.box3 {background-color: #999;
+    height: 50px;
+        display: flex;
+        align-items: center;}
+
+.copy p {font-size: 14px;
+    
+            }
+
+
+
+
+
+
+
+
+/* 미디어쿼리구간설정###################################################################################################################################### */
+/* 768px이상일때 */
+@media (min-width:768px) {
+
+
+    /* 박스설정 */
+.boxA {display: flex;
+        }
+.boxA-1 {width: 50%;}
+.boxA-2 {width: 50%;}
+
+
+
+/* 네비설정 */
+
+.boxA-2 {display: flex; 
+    justify-content: flex-end;
+    align-items: center;}
+
+.nav {}
+
+.nav ul {display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+}
+
+
+
+
+/* 와이드 데스크탑설정 */
+@media (min-width:1280px) {
+
+
+    /* 전체넓이설정*/ 
+
+.boxA, .box1, .box2, .copy {width: 1440px;
+    margin: 0 auto ;}
+
+    .boxA-out {border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    margin-bottom: 15px;}
+
+    /* 여백설정 */
+
+.boxA {padding: 8px 10px;}
+.box1 {}
+.box2 {padding: 15px 10px;}
+.box3 {}
+
+}
