@@ -277,6 +277,109 @@ letter-spacing:-1px;
 }
 
 
+/* 네번째섹션 설정 */
+section:nth-child(4) {background-image: url(img/summer_bean_bg.png);
+background-size: cover;
+background-position: center bottom;
+padding: 40px 0;
+height: 400px;}
+
+.summer_inner {display: flex;
+justify-content: center;}
+
+.summer_inner .imgBox {width: 50%;
+display: flex;
+justify-content: flex-end;}
+
+.summer_inner .txtBox {display: flex;
+flex-direction: column;
+justify-content: center;
+color: #7e5732;}
+
+.summer_inner .txtBox h4 {letter-spacing: -2px;
+font-size: 18px;}
+
+.summer_inner .txtBox h2 {letter-spacing: -1px;
+margin-bottom: 5px;
+font-size: 24px;}
+
+.summer_inner .txtBox p {letter-spacing: -2px;
+font-size: 15px;
+margin-bottom: 20px;}
+.summer_inner .txtBox span {}
+.summer_inner .txtBox span a {display: inline-block;
+    color: #7e5732;
+padding: 8px 20px;
+border-radius: 5px;
+border: 1px solid #7e5732;
+font-size: 14px;}
+
+.summer_inner .txtBox span a:hover {transition: all 0.5s;
+color: #fff;
+background-color: #7e5732;
+text-decoration: underline;}
+
+/* 다섯번째 섹션설정 */
+section:nth-child(5) {background-image: url(img/bali_bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    padding: 40px 0;
+    height: 300px;}
+
+.reserve_inner {display: flex;
+    justify-content: flex-end;
+}
+
+.reserve_inner .txtBox {display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.reserve_inner .txtBox span {margin-top: 20px;}
+.reserve_inner .txtBox span a {display: inline-block;
+    color: #B36B43;
+padding: 8px 20px;
+border-radius: 5px;
+border: 1px solid #B36B43;
+font-size: 14px;}
+
+.reserve_inner .txtBox span a:hover {transition: all 0.5s;
+    color: #fff;
+    background-color: #B36B43;
+    text-decoration: underline;}
+
+
+
+
+
+.reserve_inner .imgBox {width: 40%;
+display: flex;
+justify-content: center;}
+
+/* 여섯번째설정 */
+section:nth-child(6) {background-image: url(img/2024_summer_pick_bg.jpg);
+background-size: cover;
+background-position: center center;
+height: 600px;
+padding: 40px 0;
+background-attachment: fixed;}
+
+.pickup_inner {display: flex;
+justify-content: flex-end;
+}
+
+.pickup_inner .txtBox {display: flex;
+    flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+color: #FFF;
+}
+
+.pickup_inner .topTxt {font-weight: bold;
+                        font-size:  100px;}
+.pickup_inner em {}
+.pickup_inner b {}
 
 
 /* 미디어쿼리구간설정############################################### */
@@ -287,7 +390,7 @@ letter-spacing:-1px;
 @media(min-width:1280px){
 
 
-    .header_inner , .reward_inner{width: 1240px;
+    .header_inner , .reward_inner ,.summer_inner, .reserve_inner, .pickup_inner{width: 1240px;
                     margin: 0 auto;}
 
     .notice_inner {width: 620px;
