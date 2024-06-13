@@ -102,48 +102,58 @@ section:nth-child(1) {
     background-size: cover;
     background-position: center;
     height: 750px;
-    
+
 
 }
 
 section:nth-child(1) .hero {
-   
+
     width: 100%;
     height: 100%;
     position: relative;
 
-    
-    
+
+
 }
+
 section:nth-child(1) .hero .img1 {
     position: relative;
     width: 100%;
     height: 100%;
- 
+
 }
+
 section:nth-child(1) .hero .img1 p {
     position: absolute;
     color: #fff;
     font-size: 25px;
 }
-section:nth-child(1) .hero .img1 p:nth-child(1) {top: 80px;
-left: 50px;}
+
+section:nth-child(1) .hero .img1 p:nth-child(1) {
+    top: 80px;
+    left: 50px;
+}
+
 section:nth-child(1) .hero .img1 p:nth-child(2) {
     bottom: 80px;
     right: 50px;
 }
 
-.hero .btn {position: absolute;
-color: #fff;
-bottom: 0;
-left: 50%;
-margin-left: -50px;
-bottom: 30px;
+.hero .btn {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 30px;
 }
 
-.hero .btn ul {display: flex;
+.hero .btn ul {
+    display: flex;
     width: 100px;
-justify-content: space-between;}
+    justify-content: space-between;
+}
+
 .hero .btn li {}
 
 
@@ -153,69 +163,95 @@ section:nth-child(2) {
     background-size: cover;
     background-position: center;
     display: flex;
-    
+
 }
 
 section:nth-child(2) h1 {
-    
-    
+
+
     margin-bottom: 30px;
     margin-left: 0px;
-   
+
     font-weight: bolder;
     font-size: 40px;
 }
-section:nth-child(2) h1 span {color: #49772F;}
+
+section:nth-child(2) h1 span {
+    color: #49772F;
+}
 
 section:nth-child(2) .parti {
     position: relative;
     margin-top: 100px;
     padding-bottom: 80px;
-   
+    height: 100%;
+
 }
 
 
 
-section:nth-child(2) .parti ul {position: relative; 
+section:nth-child(2) .parti ul {
+    position: relative;
     left: 200px;
     top: 30px;
 }
 
-section:nth-child(2) .parti ul li{margin-bottom: 10px;}
+section:nth-child(2) .parti ul li {
+    margin-bottom: 10px;
+}
 
 
 section:nth-child(2) .parti .img01 {}
 
-.parti .parti_01 {display: flex;
-text-align: center;
-align-items: center;
+.parti .parti_01 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
 }
 
-.parti .parti_02 {display: flex;
-    text-align: center;
-    align-items: center;}
-.parti .parti_03 {display: flex;
-    text-align: center;
-    align-items: center;}
-
-.parti .parti_01 p {color: #fff;
-left: 250px;
-position: absolute;
-font-size: 20px;
+.parti h2 {
+    margin-top: 15px;
 }
-.parti .parti_02 p {color: #fff;
+
+.parti .parti_02 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.parti .parti_03 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.parti .parti_01 p {
+    color: #fff;
+    left: 250px;
+    position: absolute;
+    font-size: 20px;
+    text-align: start;
+
+}
+
+.parti .parti_02 p {
+    color: #fff;
     left: 350px;
     position: absolute;
     font-size: 20px;
-    }
+    text-align: start;
+}
 
-    .parti .parti_03 p {color: #fff;
-        left: 250px;
-        position: absolute;
-        font-size: 20px;
-        }        
+.parti .parti_03 p {
+    color: #fff;
+    left: 250px;
+    position: absolute;
+    font-size: 20px;
+    text-align: start;
+}
 
-    
+
 
 .parti .img02 {
     left: 900px;
@@ -231,26 +267,70 @@ section:nth-child(3) {
     background-image: url(img/section3_bg.png);
     background-size: cover;
     background-position: center;
-    display: flex;
-    
+
+    height: 769px;
 }
-section:nth-child(3) h1 {margin-bottom: 30px;
+
+section:nth-child(3) .intro {
+    height: 100%;
+    position: relative;
+}
+
+section:nth-child(3) h1 {
+    margin-bottom: 30px;
     margin-left: 0px;
-   margin-top: 50px;
+    margin-top: 50px;
     font-weight: bolder;
-    font-size: 40px;}
-    section:nth-child(3) h1 span {color: #49772F;}
+    font-size: 40px;
+}
 
-    section:nth-child(3) .txtBox p:nth-child(1) {font-size: 18px;
-    font-weight: 500;}
-    section:nth-child(3) .txtBox p:nth-child(2) {color: #49772F;
+section:nth-child(3) h1 span {
+    color: #49772F;
+}
+
+section:nth-child(3) .txtBox p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section:nth-child(3) .txtBox p:nth-child(2) {
+    color: #49772F;
     font-size: 30px;
-font-weight: bold;
-margin-top: 20px;}
+    font-weight: bold;
+    margin-top: 20px;
+}
 
+section:nth-child(3) .imgBox {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    left: 0;
+    top: 0;
+}
 
-section:nth-child(3) .imgBox ul {display: flex;}
+section:nth-child(3) .imgBox img {
+    position: absolute;
+}
 
+section:nth-child(3) .imgBox ul {
+    display: flex;
+}
+
+section:nth-child(3) .imgBox .img01 {
+    left: 300px;
+}
+
+section:nth-child(3) .imgBox .img02 {
+    left: 850px;
+}
+
+section:nth-child(3) .imgBox .img03 {
+    left: 1200px;
+}
+
+section:nth-child(3) .imgBox .img04 {
+    left: 1550px;
+}
 
 
 /* 네번째 섹션설정 */
@@ -262,32 +342,151 @@ section:nth-child(4) {
 section:nth-child(4) h1 {
     margin-bottom: 30px;
     margin-left: 0px;
-   margin-top: 50px;
+    margin-top: 50px;
     font-weight: bolder;
     font-size: 40px;
-   
-    
-}
-section:nth-child(4) .around {display: flex;}
-section:nth-child(4) .iconBox {width: 70%;
     display: flex;
-}   
-section:nth-child(4) .iconBox ul {display: flex;
-    justify-content: space-between;}
-section:nth-child(4) .iconBox li {padding: 40px;}
-section:nth-child(4) .iconBox p {padding: 10px;}
+
+    align-items: center;
+
+
+}
+
+section:nth-child(4) .around {
+    display: flex;
+}
+
+section:nth-child(4) .iconBox {
+    width: 70%;
+    display: flex;
+    margin-left: 50px;
+}
+
+section:nth-child(4) .iconBox ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+section:nth-child(4) .iconBox li {
+    padding: 40px;
+}
+
+section:nth-child(4) .iconBox p {
+    padding: 10px;
+}
+
 section:nth-child(4) .iconBox ul img {}
 
 
+/* 다섯번째섹션설정 */
+
+section:nth-child(5) {
+    padding: 20px 0;
+
+ 
+}
+section:nth-child(5) .photo01 {position: relative;
+   
+    height: 800px;
+}
+
+section:nth-child(5) .photo {
+   height: 100%;
+   
+    
+    
+}
+
+section:nth-child(5) .photo h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    position: absolute;
+    left: 170px;
+    top: 40px;
+    color: #fff;
+}
+
+section:nth-child(5) .photo .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+    
+    
+}
+
+section:nth-child(5) .photo .imgBox img {
+    position: absolute;
+
+    
+}
+
+section:nth-child(5) .photo .imgBox .imgBox01 {
+    top: 120px;
+}
+
+section:nth-child(5) .photo .imgBox .imgBox02 {
+    left: 500px;
+    top: 50px;
+    
+}
+
+section:nth-child(5) .photo .imgBox .imgBox03 {
+    left: 480px;
+    top: 360px;
+}
+section:nth-child(5) .photo .imgBox .imgBox04 {
+    z-index: -1;
+    
+    left: 40px;
+    top: 0px;
+    
+}
+
+section:nth-child(5) .photo01 .info {background-image: url(img/info.png);
+position: absolute;
+background-size: cover;
+    background-position: center;
+    height: 593px;
+    width: 436px;
+  left: 1000px;
+  bottom: 200px;
+    
+}
+section:nth-child(5) .photo01 .info h2 {font-weight: bolder;
+    font-size: 30px;
+    text-align: center ;
+    margin-top: 30px;
+    margin-right: 40px;
+line-height: 2;}
+
+    section:nth-child(5) .photo01 .info h2 span {color: #49772F;
+    }
 
 
+/* 푸터설정 */
+footer {
+    background-color: #333;
+    height: 200px;
+    color: #fff;
+}
 
-
+.copyright {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
 
 @media (min-width:1280px) {
 
     /* 전체너비고정 */
-    .header1, .parti, .intro, .around{
+    .header1,
+    .parti,
+    .intro,
+    .around,
+    .photo01,
+    .copyright {
         width: 1440px;
         margin: 0 auto;
     }
