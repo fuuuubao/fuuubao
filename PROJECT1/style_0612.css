@@ -1,5 +1,6 @@
 /* 언어설정 */
 @charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* 전체설정 */
 * {
@@ -228,7 +229,7 @@ section:nth-child(2) .parti .img01 {}
 
 .parti .parti_01 p {
     color: #fff;
-    left: 250px;
+    left: 17%;
     position: absolute;
     font-size: 20px;
     text-align: start;
@@ -237,7 +238,7 @@ section:nth-child(2) .parti .img01 {}
 
 .parti .parti_02 p {
     color: #fff;
-    left: 350px;
+    left: 26%;
     position: absolute;
     font-size: 20px;
     text-align: start;
@@ -245,7 +246,7 @@ section:nth-child(2) .parti .img01 {}
 
 .parti .parti_03 p {
     color: #fff;
-    left: 250px;
+    left: 17%;
     position: absolute;
     font-size: 20px;
     text-align: start;
@@ -254,7 +255,7 @@ section:nth-child(2) .parti .img01 {}
 
 
 .parti .img02 {
-    left: 900px;
+    left: 64%;
     display: block;
     position: relative;
 }
@@ -317,19 +318,21 @@ section:nth-child(3) .imgBox ul {
 }
 
 section:nth-child(3) .imgBox .img01 {
-    left: 300px;
+    left: 18%;
+    bottom: 19%;
 }
 
 section:nth-child(3) .imgBox .img02 {
-    left: 850px;
+    left: 48%;
 }
 
 section:nth-child(3) .imgBox .img03 {
-    left: 1200px;
+    left: 70%;
 }
 
 section:nth-child(3) .imgBox .img04 {
-    left: 1550px;
+    right: -7%;
+    
 }
 
 
@@ -357,9 +360,9 @@ section:nth-child(4) .around {
 }
 
 section:nth-child(4) .iconBox {
-    width: 70%;
+   
     display: flex;
-    margin-left: 50px;
+    margin-left: 8%;
 }
 
 section:nth-child(4) .iconBox ul {
@@ -368,7 +371,7 @@ section:nth-child(4) .iconBox ul {
 }
 
 section:nth-child(4) .iconBox li {
-    padding: 40px;
+    padding: 50px;
 }
 
 section:nth-child(4) .iconBox p {
@@ -381,7 +384,7 @@ section:nth-child(4) .iconBox ul img {}
 /* 다섯번째섹션설정 */
 
 section:nth-child(5) {
-    padding: 20px 0;
+    padding-top: 20px;
 
  
 }
@@ -449,8 +452,8 @@ background-size: cover;
     background-position: center;
     height: 593px;
     width: 436px;
-  left: 1000px;
-  bottom: 200px;
+  right: 0%;
+  bottom: 28%;
     
 }
 section:nth-child(5) .photo01 .info h2 {font-weight: bolder;
@@ -463,6 +466,84 @@ line-height: 2;}
     section:nth-child(5) .photo01 .info h2 span {color: #49772F;
     }
 
+
+/* 여섯번째 섹션설정 */
+section:nth-child(6) {display: flex;
+}
+section:nth-child(6) .reserved {background-image: url(img/reserved_bg.png);
+    margin-left: 0;
+    background-size: cover;
+        background-position: center;
+        height: 800px;
+        width: 750px;
+        display: grid;
+        position: relative;
+        margin-top: 20px;
+        
+        
+        
+        
+    }
+section:nth-child(6) .reserved h1 {
+    position: absolute;
+    font-weight: bolder;
+    font-size: 30px;
+    top: 20%;
+    left: 10%;}
+    section:nth-child(6) .reserved h1 span {color: #49772F;}
+    section:nth-child(6) .reserved .form {}
+
+section:nth-child(6) .reserved p {text-align: center;
+position: absolute;
+font-size: 20px;
+font-weight: bold;
+top: 40%;
+left: 5%;}
+
+section:nth-child(6) .reserved p span {color: #49772F;}
+
+
+
+section:nth-child(6) .infoBox {position: relative;}
+section:nth-child(6) .infoBox ul {display: flex;
+    width: 330px;
+height: 230px;
+}
+section:nth-child(6) .infoBox li {width: 330px;
+height: 230px;
+background-color: #49772F;
+border-radius: 14%;
+position: absolute;
+top: 30%;
+left: 30px;
+text-align: center;
+
+}
+
+section:nth-child(6) .infoBox li:nth-child(1) {line-height: 2;
+}
+section:nth-child(6) .infoBox li:nth-child(2) {left: 50%;
+line-height: 2;}
+section:nth-child(6) .infoBox h2 {color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section:nth-child(6) .infoBox span {color: #fff;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+section:nth-child(6) .info1 span {line-height: 3;}
+
+section:nth-child(6) .notice {width: 605px;
+    height: 770px;
+    bottom: 0;
+    padding-top: 50px;
+background-image: url(img/notice_bg.png);}
+section:nth-child(6) .noticeBox img {}
+section:nth-child(6) .noticeBox ul {}
 
 /* 푸터설정 */
 footer {
@@ -486,7 +567,10 @@ footer {
     .intro,
     .around,
     .photo01,
-    .copyright {
+    .copyright,
+    .reserved,
+    .notice
+     {
         width: 1440px;
         margin: 0 auto;
     }
