@@ -67,21 +67,22 @@ h2 {
 
 
 #app { position: relative;}
-.container {
-   width: 100%;
-   height: 100%;
+
    
    
 
-}
+
 
 .wrap {
    width: 100%;
-   position: absolute;  
+    
   
 }
-
-
+.container {
+   width: 100%;
+   height: 100%;
+ 
+}
 
 /* 배경동영상 */
 .vid {
@@ -212,7 +213,7 @@ width: 150px;}
 
 
 
-.main-page-container {}
+.main-page-container { }
 
 .bg img {
    width: 832px;
@@ -232,7 +233,7 @@ width: 150px;}
 }
 
 .part1 p {position: absolute;
-right: 0;}
+right: 100px;}
 
 
 
@@ -305,7 +306,7 @@ right: 0;}
    
 }
 
-/**/ .ani1 {
+ .ani1 {
    animation: ani 0.5s linear infinite alternate;
 }
 
@@ -730,6 +731,32 @@ footer {
    padding-top: 40px;
    line-height: 25px;
 }
+
+
+/* 팝업설정 */
+
+.popup {}
+.main_img {position: relative;
+   height: 700px;}
+.main_img ul {display: flex;
+justify-content: center;
+align-items: center;
+height: 100%   ;
+}
+.main_img li {position: absolute;}
+
+
+.sub_img {display: flex;
+justify-content: center;}
+.sub_img ul {display: flex;
+   width: 640px;
+
+align-items: center;
+justify-content: space-between;}
+.sub_img li {}
+.sub_img li p {border: #000 1px solid;
+padding: 21.5px;}
+
 
 /* 넓이설정 */
 @media (min-width:832px) {
