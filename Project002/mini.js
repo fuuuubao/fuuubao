@@ -26,9 +26,9 @@ i++;
 if (i==3)i=0
 // ==는 돌아갈 이미지의 개수와 동일
 console.log(i)
-$('.part1 li').eq(i-2).css({'left':'80%'}).stop().animate({'left':'-80%'})
-$('.part1 li').eq(i-1).css({'left':'0'}).stop().animate({'left':'80%'})
-$('.part1 li').eq(i).css({'left' : '-80%'}).stop().animate({'left':'0'})
+$('.part1 li').eq(i-2).css({'left':'100%'}).stop().animate({'left':'0%'})
+$('.part1 li').eq(i-1).css({'left':'50'}).stop().animate({'left':'100%'})
+$('.part1 li').eq(i).css({'left' : '0%'}).stop().animate({'left':'50%'})
 },3000);
 
 
