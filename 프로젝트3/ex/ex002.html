@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3_ex001</title>
+    <!-- 제이쿼리cdn -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+
+
+    <style>
+        * {margin: 0;
+            padding: 0;}
+        ul {list-style: none;}
+        
+        body {height: 20000px;}
+
+
+        header {position: fixed;
+        width: 100%;
+    height: 120px;
+background-color: gray;
+display: flex;
+align-items: center;
+z-index: 99;}
+        header h1 {width: 10%;}
+        header nav {width: 90%;}
+        header nav ul {display: flex;
+        width: 100%;
+    justify-content: space-around;}
+        header nav ul li {padding: 20px;
+        cursor: pointer;
+        color: #fff;}
+        header li:hover {text-decoration: underline;}
+
+
+        section {position: fixed;
+        width: 100%;
+    height: calc(100vh - 120px);
+background-color: #ccc;
+top: 120px;
+left: 0;
+z-index: 1;
+perspective: 2500px;
+}
+
+        section>article {width: 100%;
+                        height: 100%;
+                        display: flex;
+                    justify-content: center;
+                align-items: center;
+            font-size: 160px;
+        position: absolute;
+    
+opacity: 0.3;
+left: 0;
+            top: 0;
+        z-index: 1;}
+        /* 세부내용을 정리하기 위해 flex해놓고 정리한다 */
+        section>article:nth-child(1) {background-color: darkolivegreen;
+            transform: translateZ(0px);
+    
+    }
+        section>article:nth-child(2) {background-color: red;
+            transform: translateZ(-5000px);
+            
+        
+        }
+        section>article:nth-child(3) {background-color: chartreuse;
+            transform: translateZ(-10000px);
+    }
+        section>article:nth-child(4) {background-color: wheat;
+            transform: translateZ(-15000px);
+        
+}
+
+
+            section>article.on {
+                z-index: 2;
+                opacity: 1;
+            }
+    </style>
+
+
+<script>
+
+    $(document).ready(function(){
+
+        // 1.스크롤의 값을 찾기
+        $(window).scroll(function(){
+
+            var sc = $(this).scrollTop()
+            console.log(sc);
+
+            $('article').eq(0).css({'transform':'translateZ('+(0+sc)+'px)'})
+            $('article').eq(1).css({'transform':'translateZ('+(-5000+sc)+'px)'})
+            $('article').eq(2).css({'transform':'translateZ('+(-10000+sc)+'px)'})
+            $('article').eq(3).css({'transform':'translateZ('+(-15000+sc)+'px)'})
+            
+        })
+
+        // nav li를 클릭했을때, 
+        // 1순번찾기
+        // 2.클릭한순번에 맞춰 article에게 Class값주기
+
+        $('nav li').click(function(){
+
+            var i = $(this).index()
+            console.log(i)
+            $('article').removeClass('on')
+
+            $('article').eq(i).addClass('on')
+
+            $('html,body').stop().animate({'scrollTop':i*5000},1200)
+        })
+
+
+        
+    })
+
+
+</script>
+</head>
+<body>
+    <header class="">
+        <h1>로고</h1>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>profile</li>
+                <li>gallery</li>
+                <li>자유주제</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <article class="on">menu1</article>
+        <article>menu2</article>
+        <article>menu3</article>
+        <article>menu4</article>
+    </section>
+</body>
+</html>
